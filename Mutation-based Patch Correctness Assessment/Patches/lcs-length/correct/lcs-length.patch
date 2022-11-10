@@ -1,0 +1,14 @@
+--- /src/main/java/org/quixbugs/LCS_LENGTH.java	2022-09-12 18:46:30.862660691 -0500
++++ /src/main/java/org/quixbugs/LCS_LENGTH.java	2022-09-14 12:58:41.272849321 -0500
+@@ -33,9 +33,9 @@
+             for (int j=0; j < t.length(); j++) {
+                 if (s.charAt(i) == t.charAt(j)) {
+ 
+-                    if (dp.containsKey(i-1)) {
++                    if (dp.containsKey(i-1)&&dp.get(i-1).containsKey(j-1)) {
+                         Map<Integer, Integer> internal_map = dp.get(i);
+-                        int insert_value = dp.get(i-1).get(j) + 1;
++                        int insert_value = dp.get(i-1).get(j-1) + 1;
+                         internal_map.put(j, insert_value);
+                         dp.put(i,internal_map);
+                     } else {

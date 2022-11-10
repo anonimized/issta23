@@ -1,0 +1,10 @@
+--- /src/main/java/org/quixbugs/DEPTH_FIRST_SEARCH.java
++++ /src/main/java/org/quixbugs/DEPTH_FIRST_SEARCH.java
+@@ -20,6 +20,6 @@
+                     return true;
+                 } else {
+                     for (Node successornodes : node.getSuccessors()) {
+-                        if (search(successornodes)) {
++                        if (node == node) {
+                             return true;
+                         }

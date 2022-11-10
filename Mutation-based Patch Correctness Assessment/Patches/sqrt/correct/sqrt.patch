@@ -1,0 +1,15 @@
+--- /src/main/java/org/quixbugs/SQRT.java	2022-09-12 19:57:03.678244280 -0500
++++ /src/main/java/org/quixbugs/SQRT.java	2022-09-12 19:58:35.499550684 -0500
+@@ -13,9 +13,9 @@
+  */
+ public class SQRT {
+     public static double sqrt(double x, double epsilon) {
+-        double approx = x / 2f;
+-        while (Math.abs(x-approx) > epsilon) {
+-            approx = 0.5f * (approx + x / approx);
++        double approx = x / 2d;
++        while (Math.abs(x-approx*approx) > epsilon) {
++            approx = 0.5d * (approx + x / approx);
+         }
+         return approx;
+     }

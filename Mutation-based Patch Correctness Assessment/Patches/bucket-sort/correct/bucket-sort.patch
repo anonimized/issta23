@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/BUCKETSORT.java	2022-09-14 12:37:16.152691141 -0500
++++ /src/main/java/org/quixbugs/BUCKETSORT.java	2022-09-14 12:38:10.289186907 -0500
+@@ -19,7 +19,7 @@
+ 
+         ArrayList<Integer> sorted_arr = new ArrayList<Integer>(100);
+         int i = 0;
+-        for (Integer count : arr) { // arr is counts in fixed version
++        for (Integer count : counts) {
+             sorted_arr.addAll(Collections.nCopies(count, i));
+             i++;
+         }

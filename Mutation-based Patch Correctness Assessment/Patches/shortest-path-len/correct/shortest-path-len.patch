@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/SHORTEST_PATH_LENGTH.java	2022-09-14 13:17:14.760382380 -0500
++++ /src/main/java/org/quixbugs/SHORTEST_PATH_LENGTH.java	2022-09-14 13:17:30.576536282 -0500
+@@ -35,7 +35,7 @@
+                 }
+ 
+                 unvisitedNodes.put(nextnode, Math.min(unvisitedNodes.get(nextnode),
+-                        unvisitedNodes.get(nextnode) + length_by_edge.get(Arrays.asList(node, nextnode))));
++                        distance + length_by_edge.get(Arrays.asList(node, nextnode))));
+             }
+         }
+ 

@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/SIEVE.java	2022-09-14 13:24:30.668591382 -0500
++++ /src/main/java/org/quixbugs/SIEVE.java	2022-09-14 13:24:46.324741616 -0500
+@@ -42,7 +42,7 @@
+     public static ArrayList<Integer> sieve(Integer max) {
+         ArrayList<Integer> primes = new ArrayList<Integer>();
+         for (int n = 2; n < max + 1; n++) {
+-            if (any(list_comp(n, primes))) {
++            if (all(list_comp(n, primes))) {
+                 primes.add(n);
+             }
+         }

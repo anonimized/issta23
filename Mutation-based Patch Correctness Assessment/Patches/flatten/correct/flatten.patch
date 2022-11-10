@@ -1,0 +1,17 @@
+--- /src/main/java/org/quixbugs/FLATTEN.java	2022-09-14 12:47:33.662342709 -0500
++++ /src/main/java/org/quixbugs/FLATTEN.java	2022-09-14 12:46:58.614022073 -0500
+@@ -18,12 +18,12 @@
+                 if (x instanceof ArrayList) {
+                     result.addAll((ArrayList) flatten(x));
+                 } else {
+-                    result.add(flatten(x));
++                    result.add((x));
+                 }
+             }
+             return result;
+         } else {
+-            return flatten(arr);
++            return arr;
+         }
+     }
+ }

@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/LIS.java	2022-09-12 18:53:12.117635593 -0500
++++ /src/main/java/org/quixbugs/LIS.java	2022-09-12 18:54:44.850192635 -0500
+@@ -29,7 +29,7 @@
+ 
+             if (length == longest || val < arr[ends.get(length+1)]) {
+                 ends.put(length+1, i);
+-                longest = length + 1;
++                longest = Math.max(longest,length + 1);
+             }
+ 
+             i++;

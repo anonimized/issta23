@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/PASCAL.java	2022-09-12 19:16:17.348486891 -0500
++++ /src/main/java/org/quixbugs/PASCAL.java	2022-09-12 19:17:20.249036481 -0500
+@@ -20,7 +20,7 @@
+ 
+         for (int r=1; r<n; r++) {
+             ArrayList<Integer> row = new ArrayList<Integer>();
+-            for (int c=0; c<r; c++) {
++            for (int c=0; c<r+1; c++) {
+                 int upleft, upright;
+                 if (c > 0) {
+                     upleft = rows.get(r-1).get(c-1);

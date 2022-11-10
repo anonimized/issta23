@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/TO_BASE.java	2022-09-12 20:06:09.957389247 -0500
++++ /src/main/java/org/quixbugs/TO_BASE.java	2022-09-12 20:07:18.426579328 -0500
+@@ -19,7 +19,7 @@
+         while (num > 0) {
+             i = num % b;
+             num = num / b; // floor division?
+-            result = result + String.valueOf(alphabet.charAt(i));
++            result = String.valueOf(alphabet.charAt(i))+result;
+         }
+ 
+         return result;

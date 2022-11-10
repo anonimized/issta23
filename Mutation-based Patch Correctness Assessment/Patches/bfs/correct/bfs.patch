@@ -1,0 +1,19 @@
+--- /src/main/java/org/quixbugs/BREADTH_FIRST_SEARCH.java	2022-09-14 12:34:43.715294641 -0500
++++ /src/main/java/org/quixbugs/BREADTH_FIRST_SEARCH.java	2022-09-14 12:34:08.394970937 -0500
+@@ -21,7 +21,7 @@
+ 
+         nodesvisited.add(startnode);
+ 
+-        while (true) {
++        while (!queue.isEmpty()) {
+             Node node = queue.removeFirst();
+ 
+             if (node == goalnode) {
+@@ -39,6 +39,7 @@
+          * The buggy program always drops into while(true) loop and will not return false
+          * Removed below line to fix compilation error
+          */
++        return false;
+     }
+ }
+ 

@@ -1,0 +1,10 @@
+--- /src/main/java/org/quixbugs/SHUNTING_YARD.java	2022-09-14 13:22:38.263511335 -0500
++++ /src/main/java/org/quixbugs/SHUNTING_YARD.java	2022-09-14 13:22:58.343704486 -0500
+@@ -30,6 +30,7 @@
+                 while (!opstack.isEmpty() && precedence.get(operator) <= precedence.get(opstack.getLast())) {
+                     rpntokens.add(opstack.pop());
+                 }
++                opstack.push(token);
+             }
+         }
+ 

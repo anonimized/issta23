@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/MERGESORT.java	2022-09-14 13:03:41.004175907 -0500
++++ /src/main/java/org/quixbugs/MERGESORT.java	2022-09-14 13:03:57.220348711 -0500
+@@ -30,7 +30,7 @@
+     }
+ 
+     public static ArrayList<Integer> mergesort(ArrayList<Integer> arr) {
+-        if (arr.size() == 0) { // <= 1 in correct version
++        if (arr.size() <= 1) { // <= 1 in correct version
+             return arr;
+         } else {
+             int middle = arr.size() / 2;

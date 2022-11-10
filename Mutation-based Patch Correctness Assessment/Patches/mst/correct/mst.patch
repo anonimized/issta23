@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/MINIMUM_SPANNING_TREE.java	2022-09-14 12:22:58.740817600 -0500
++++ /src/main/java/org/quixbugs/MINIMUM_SPANNING_TREE.java	2022-09-14 12:24:08.865464128 -0500
+@@ -26,7 +26,7 @@
+                 minSpanningTree.add(edge);
+                 groupByNode = update(groupByNode, vertex_u, vertex_v);
+                 for (Node node : groupByNode.get(vertex_v)) {
+-                    groupByNode = update(groupByNode, node, vertex_u);
++                    groupByNode.put(node,  groupByNode.get(vertex_u));
+                 }
+             }
+         }

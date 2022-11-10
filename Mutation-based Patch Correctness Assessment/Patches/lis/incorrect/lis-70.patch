@@ -1,0 +1,51 @@
+--- /src/main/java/org/quixbugs/LIS.java	2022-09-21 14:36:30.619675284 -0500
++++ /src/main/java/org/quixbugs/LIS.java	2022-09-21 14:36:05.667280547 -0500
+@@ -27,13 +27,43 @@
+ 
+             int length = !prefix_lengths.isEmpty() ? Collections.max(prefix_lengths) : 0;
+ 
+-            if (length == longest || val < arr[ends.get(length+1)]) {
+-                ends.put(length+1, i);
+-                longest = length + 1;
+-            }
++            ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    ends.put(length + 1, i);
++	    if (length == longest || val < arr[ends.get(length+1)]) {
++                ends.put(length + 1, i);
++		for (int j = 1; j < longest + 1; j++) {
++		    if (arr[ends.get(j)] < val) {
++			prefix_lengths.add(j);
++		    }
++		}
++		ends.put(length + 1, i);
++		for (int j = 1; j < longest + 1; j++) {
++		    if (arr[ends.get(j)] < val) {
++			prefix_lengths.add(j);
++		    }
++		}
++		for (int j = 1; j < longest + 1; j++) {
++		    if (arr[ends.get(j)] < val) {
++			prefix_lengths.add(j);
++		    }
++		}
++		ends.put(length + 1, i);
++		ends.put(length + 1, i);
++		ends.put(length + 1, i);
++		longest = length + 1;
++	    }
+ 
+             i++;
+         }
+-        return longest;
++	i++;
++	return longest;
+     }
+ }

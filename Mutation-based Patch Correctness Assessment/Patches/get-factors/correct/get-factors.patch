@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/GET_FACTORS.java	2022-09-14 12:50:40.468051527 -0500
++++ /src/main/java/org/quixbugs/GET_FACTORS.java	2022-09-14 12:50:25.815917505 -0500
+@@ -25,7 +25,7 @@
+                 return prepend;
+             }
+         }
+-        return new ArrayList<Integer>();
++        return new ArrayList<Integer>(Arrays.asList(n));
+     }
+ }
+ 

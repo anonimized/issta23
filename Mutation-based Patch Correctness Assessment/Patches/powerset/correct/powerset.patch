@@ -1,0 +1,25 @@
+--- /src/main/java/org/quixbugs/POWERSET.java	2022-09-14 13:10:46.380555272 -0500
++++ /src/main/java/org/quixbugs/POWERSET.java	2022-09-14 13:11:02.200713469 -0500
+@@ -20,13 +20,18 @@
+ 
+             ArrayList<ArrayList> output = new ArrayList<ArrayList>(100);
+             ArrayList to_add = new ArrayList(100);
+-            to_add.add(first);
++
+             for (ArrayList subset : rest_subsets) {
+-                to_add.addAll(subset);
++                ArrayList r = new ArrayList();
++                r.add(first);
++                r.addAll(subset);
++                to_add.add(r);
+             }
+-            output.add(to_add);
+ 
+-            return output;
++            output.addAll(to_add);
++            rest_subsets.addAll(output);
++
++            return rest_subsets;
+         } else {
+             ArrayList empty_set = new ArrayList<ArrayList>();
+             empty_set.add(new ArrayList());

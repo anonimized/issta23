@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/RPN_EVAL.java	2022-09-14 13:13:09.225975532 -0500
++++ /src/main/java/org/quixbugs/RPN_EVAL.java	2022-09-14 13:13:23.178113342 -0500
+@@ -31,7 +31,7 @@
+                 Double b = (Double) stack.pop();
+                 Double c = 0.0;
+                 BinaryOperator<Double> bin_op = op.get(token);
+-                c = bin_op.apply(a, b);
++                c = bin_op.apply(b, a);
+                 stack.push(c);
+             }
+         }

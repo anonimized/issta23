@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/IS_VALID_PARENTHESIZATION.java	2022-09-22 15:12:39.271255305 -0500
++++ /src/main/java/org/quixbugs/IS_VALID_PARENTHESIZATION.java	2022-09-22 15:13:05.615506685 -0500
+@@ -14,7 +14,7 @@
+         int depth = 0;
+         for (int i = 0; i < parens.length(); i++) {
+             Character paren = parens.charAt(i);
+-            if (paren.equals('(')) {
++            if ((1 < (parens.length()) - (1)) && ((paren) != (1 + '('))) {
+                 depth++;
+             } else {
+                 depth--;

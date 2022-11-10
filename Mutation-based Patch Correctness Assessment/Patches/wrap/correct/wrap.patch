@@ -1,0 +1,10 @@
+--- /src/main/java/org/quixbugs/WRAP.java	2022-09-14 13:31:08.504429275 -0500
++++ /src/main/java/org/quixbugs/WRAP.java	2022-09-14 13:30:33.512068285 -0500
+@@ -28,6 +28,7 @@
+             text = text.substring(end);
+             lines.add(line);
+         }
++        lines.add(text);
+         return lines;
+     }
+ }

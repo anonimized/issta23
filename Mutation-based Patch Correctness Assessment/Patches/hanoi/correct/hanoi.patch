@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/HANOI.java	2022-09-12 18:30:45.469533232 -0500
++++ /src/main/java/org/quixbugs/HANOI.java	2022-09-12 18:33:04.582854618 -0500
+@@ -25,7 +25,7 @@
+             crap_set.remove(end);
+             int helper = crap_set.poll();
+             steps.addAll(hanoi(height-1, start, helper));
+-            steps.add(new Pair<Integer,Integer>(start, helper));
++            steps.add(new Pair<Integer,Integer>(start, end));
+             steps.addAll(hanoi(height-1, helper, end));
+         }
+ 

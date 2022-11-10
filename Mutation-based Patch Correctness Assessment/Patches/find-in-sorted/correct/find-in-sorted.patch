@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/FIND_IN_SORTED.java	2022-09-12 17:18:00.429717650 -0500
++++ /src/main/java/org/quixbugs/FIND_IN_SORTED.java	2022-09-12 17:19:45.750736387 -0500
+@@ -16,7 +16,7 @@
+         if (x < arr[mid]) {
+             return binsearch(arr, x, start, mid);
+         } else if (x > arr[mid]) {
+-            return binsearch(arr, x, mid, end);
++            return binsearch(arr, x, mid+1, end);
+         } else {
+             return mid;
+         }

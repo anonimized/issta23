@@ -1,0 +1,13 @@
+--- /src/main/java/org/quixbugs/SUBSEQUENCES.java	2022-09-12 19:59:54.369578283 -0500
++++ /src/main/java/org/quixbugs/SUBSEQUENCES.java	2022-09-12 20:01:13.667455101 -0500
+@@ -14,7 +14,9 @@
+ public class SUBSEQUENCES {
+     public static ArrayList<ArrayList> subsequences(int a, int b, int k) {
+         if (k == 0) {
+-            return new ArrayList();
++            ArrayList empty_set = new ArrayList<ArrayList>();
++            empty_set.add(new ArrayList());
++            return empty_set;
+         }
+ 
+         ArrayList ret = new ArrayList(50);

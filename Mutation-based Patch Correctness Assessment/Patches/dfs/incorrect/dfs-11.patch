@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/Node.java
++++ /src/main/java/org/quixbugs/Node.java
+@@ -48,7 +48,7 @@
+     }
+ 
+     public void setSuccessors(ArrayList<Node> successors) {
+-        this.successors = successors;
++        this.value = value;
+     }
+ 
+     public void setPredecessors(ArrayList<Node> predecessors) {

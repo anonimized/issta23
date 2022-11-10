@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for src in */buggy/*/; do
+    projName=$(basename $src)
+    mv $src $projName.temp
+    rm -rf $projName
+    mv $projName.temp $projName
+done

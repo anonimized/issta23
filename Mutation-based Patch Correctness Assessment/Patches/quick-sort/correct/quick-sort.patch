@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/QUICKSORT.java	2022-09-12 19:26:12.033727089 -0500
++++ /src/main/java/org/quixbugs/QUICKSORT.java	2022-09-12 19:27:46.494565634 -0500
+@@ -24,7 +24,7 @@
+         for (Integer x : arr.subList(1, arr.size())) {
+             if (x < pivot) {
+                 lesser.add(x);
+-            } else if (x > pivot) {
++            } else if (x >= pivot) {
+                 greater.add(x);
+             }
+         }

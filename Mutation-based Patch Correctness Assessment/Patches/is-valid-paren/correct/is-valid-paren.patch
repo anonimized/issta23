@@ -1,0 +1,10 @@
+--- /src/main/java/org/quixbugs/IS_VALID_PARENTHESIZATION.java	2022-09-14 12:52:58.653315381 -0500
++++ /src/main/java/org/quixbugs/IS_VALID_PARENTHESIZATION.java	2022-09-14 12:53:11.269430768 -0500
+@@ -23,6 +23,6 @@
+                 }
+             }
+         }
+-        return true;
++        return depth == 0;
+     }
+ }

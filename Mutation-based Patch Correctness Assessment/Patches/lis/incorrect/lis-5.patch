@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/LIS.java
++++ /src/main/java/org/quixbugs/LIS.java
+@@ -26,7 +26,7 @@
+             }
+ 
+             int length = !prefix_lengths.isEmpty() ? Collections.max(prefix_lengths) : 0;
+-
++	    ends.put((length + 1), i);
+             if (length == longest || val < arr[ends.get(length+1)]) {
+                 ends.put(length+1, i);
+                 longest = length + 1;

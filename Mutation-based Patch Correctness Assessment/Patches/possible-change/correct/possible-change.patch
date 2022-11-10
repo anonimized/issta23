@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/POSSIBLE_CHANGE.java	2022-09-12 19:18:57.301887250 -0500
++++ /src/main/java/org/quixbugs/POSSIBLE_CHANGE.java	2022-09-12 19:20:01.394450692 -0500
+@@ -15,7 +15,7 @@
+         if (total == 0) {
+             return 1;
+         }
+-        if (total < 0) {
++        if (total < 0 ||coins.length==0) {
+             return 0;
+         }
+ 

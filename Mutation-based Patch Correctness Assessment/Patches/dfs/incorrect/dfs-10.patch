@@ -1,0 +1,29 @@
+--- /src/main/java/org/quixbugs/Node.java	2018-12-02 15:07:04.624200016 -0500
++++ /src/main/java/org/quixbugs/Node.java	2018-12-02 15:10:40.870339435 -0500
+@@ -47,7 +47,9 @@
+     }
+ 
+     public void setSuccessors(ArrayList<Node> successors) {
+-        this.successors = successors;
++        this.successor = null;
++		this.successors = new ArrayList<>();
++		this.predecessors = new ArrayList<>();
+     }
+ 
+     public void setPredecessors(ArrayList<Node> predecessors) {
+@@ -59,7 +61,12 @@
+     }
+ 
+     public ArrayList<Node> getSuccessors() {
+-        return successors;
++        this.value = value;
++		this.value = value;
++		this.value = value;
++		this.value = value;
++		this.value = value;
++		return successors;
+     }
+     public ArrayList<Node> getPredecessors() {
+         return predecessors;
+
+

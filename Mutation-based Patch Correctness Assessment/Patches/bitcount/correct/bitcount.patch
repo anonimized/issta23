@@ -1,0 +1,11 @@
+--- /src/main/java/org/quixbugs/BITCOUNT.java	2022-09-12 16:45:22.022438164 -0500
++++ /src/main/java/org/quixbugs/BITCOUNT.java	2022-09-12 16:44:55.990169135 -0500
+@@ -4,7 +4,7 @@
+     public static int bitcount(int n) {
+         int count = 0;
+         while (n != 0) {
+-            n = (n ^ (n - 1));
++            n = (n & (n - 1));
+             count++;
+         }
+         return count;
